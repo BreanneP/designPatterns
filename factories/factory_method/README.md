@@ -8,7 +8,7 @@ git clone https://github.com/BreanneP/patternDesigns.git
 
 2. Change into this current directory
 ```
-cd patternDesigns/factory_method
+cd patternDesigns/factories/factory_method
 ```
 
 3. Compile the program using Make

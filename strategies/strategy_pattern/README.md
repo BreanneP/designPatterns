@@ -8,7 +8,7 @@ git clone https://github.com/BreanneP/patternDesigns.git
 
 2. Change into this current directory
 ```
-cd patternDesigns/strategy_pattern
+cd patternDesigns/strategies/strategy_pattern
 ```
 
 3. Compile the program using Make

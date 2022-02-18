@@ -8,7 +8,7 @@ git clone https://github.com/BreanneP/patternDesigns.git
 
 2. Change into this current directory
 ```
-cd patternDesigns/abstract_factory
+cd patternDesigns/factories/abstract_factory
 ```
 
 3. Compile the program using Make (ignore the warnings)
