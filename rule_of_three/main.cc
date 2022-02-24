@@ -13,15 +13,34 @@ int main() {
     std::cout << std::endl;
 
     // call copy constructor
-    obj1.SomeFunction(obj2);
+    RuleOfThree obj3(obj2);
     std::cout << "Object 1 after: " << obj1.GetDataObject() << std::endl;
     std::cout << "Object 2 after: " << obj2.GetDataObject() << std::endl;
+    std::cout << "Object 3 after: " << obj3.GetDataObject() << std::endl;
     std::cout << std::endl;
+
+    // call copy constructor again
+    RuleOfThree obj4 = obj2;
+    std::cout << "Object 1 after: " << obj1.GetDataObject() << std::endl;
+    std::cout << "Object 2 after: " << obj2.GetDataObject() << std::endl;
+    std::cout << "Object 3 after: " << obj3.GetDataObject() << std::endl;
+    std::cout << "Object 4 after: " << obj4.GetDataObject() << std::endl;
+    std::cout << std::endl;
+
+    // call copy constructor again
+    obj1.SomeFunction(obj2);   
+    std::cout << "Object 1 after: " << obj1.GetDataObject() << std::endl; 
+    std::cout << "Object 2 after: " << obj2.GetDataObject() << std::endl;
+    std::cout << "Object 3 after: " << obj3.GetDataObject() << std::endl;
+    std::cout << "Object 4 after: " << obj4.GetDataObject() << std::endl;
+    std::cout << std::endl; 
 
     // call copy assignment operator
     obj1 = obj2;
     std::cout << "Object 1 after: " << obj1.GetDataObject() << std::endl;
     std::cout << "Object 2 after: " << obj2.GetDataObject() << std::endl;
+    std::cout << "Object 3 after: " << obj3.GetDataObject() << std::endl;
+    std::cout << "Object 4 after: " << obj4.GetDataObject() << std::endl;
     std::cout << std::endl;
 
     return 0;
