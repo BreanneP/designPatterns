@@ -35,6 +35,18 @@ RESULT: Branch(Branch(Leaf+Leaf)+Branch(Leaf)+Leaf)
 
 
 ## Parts of this Design
+* Component
+    * this interface describes operations that are common to both simple and complex elements of the tree
+* Client
+    * works with all the elements through the component interface. As a result, the client can work in the same way with both simple or complex elements of the tree
+* Leaf
+    * basic element of a tree that doesn't have sub-elements
+    * end up doing most of the work since they don't have anyone to delegate the work to
+* Composite
+    * an element that has sub-elements (leaves or other containers)
+    * does not know the concrete classes of its children
+    * works with sub-elements only via the component interface
+    * upon receiving a request, it delegates the work to its sub-elements, processes intermediate results, and then returns the final result the client
 
 
 ## UML Design
