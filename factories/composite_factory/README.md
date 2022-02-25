@@ -36,4 +36,7 @@ RESULT: Branch(Branch(Leaf+Leaf)+Branch(Leaf)+Leaf)
 
 ## Parts of this Design
 
+
 ## UML Design
+
+![Alt text](CompositeFactory.png?raw=true "Title") 
