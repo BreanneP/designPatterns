@@ -1,19 +1,12 @@
-main: main.o composite.o component.o leaf.o
-	g++ main.o composite.o component.o leaf.o -o main
+CXX = g++
+CXXFLAGS = -std=c++0x -Wall
 
-main.o: main.cc
-	g++ -c main.cc
+OBJECTS = main.o component.o composite.o leaf.o
 
-component.o: component.cc component.h
-	g++ -std=c++11 -c component.cc -o component.o
+main: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
-leaf.o: leaf.cc leaf.h component.o
-	g++ -std=c++11 -c leaf.cc -o leaf.o
-
-composite.o: composite.cc composite.h component.o
-	g++ -std=c++11 -c composite.cc -o composite.o
-
-.PHONY: clean
+$(OBJECTS): component.h composite.h leaf.h
 
 clean:
 	rm -rf main *.o

@@ -1,13 +1,12 @@
-main: main.o ruleOfThree.o
-	g++ main.o ruleOfThree.o -o main
+CXX = g++
+CXXFLAGS = -std=c++0x -Wall
 
-main.o: main.cc
-	g++ -c main.cc
+OBJECTS = main.o ruleOfThree.o
 
-ruleOfThree.o: ruleOfThree.cc ruleOfThree.h
-	g++ -std=c++11 -c ruleOfThree.cc -o ruleOfThree.o
+main: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
-.PHONY: clean
+$(OBJECTS): ruleOfThree.h
 
 clean:
 	rm -rf main *.o
