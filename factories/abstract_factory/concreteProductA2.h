@@ -6,7 +6,9 @@
 
 class ConcreteProductA2 : public AbstractProductA {
     public:
-        std::string UsefulFunctionA() const;
+        std::string UsefulFunctionA() const {
+            return "The result of the product A2.";
+        };
 };
 
 #endif
