@@ -33,7 +33,7 @@ Subsystem2: Fire!
 
 ## Parts of this Design
 * Facade
-    * provides convenienet access to a particular part of the subsystem's functionality
+    * provides convenient access to a particular part of the subsystem's functionality
     * it knows where to direct the client's request and how to operate all the moving parts
 * Additional Facade
     * can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure
