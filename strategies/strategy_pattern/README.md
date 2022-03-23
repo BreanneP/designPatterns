@@ -34,7 +34,7 @@ Strategy B
     * maintains a reference to one of the concrete strategies and communicates with this object only via the strategy interface
   * Strategy
     * is common to all concrete strategies
-    * it declares a method the context uses to excute a strategy
+    * it declares a method the context uses to execute a strategy
   * Concrete Strategies
     * implement different variations of an algorithm the context uses
   * Client

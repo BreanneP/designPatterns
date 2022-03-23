@@ -37,7 +37,7 @@ The result of the B2 collaborating with ( The result of the product A2. )
   * Abstract Products
     * declare interfaces for a set of distinct but related products which make up a product family
   * Concrete Products
-    * various implementations of abstract products, grouped by varients.
+    * various implementations of abstract products, grouped by variants.
     * each abstract product must be implemented in all given variants
   * Abstract Factory
     * interface declares a set of methods for creating each of the abstract products

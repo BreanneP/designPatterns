@@ -1,4 +1,4 @@
-# Composite Factory
+# Composite Pattern
 
 ## How to Run
 1. Clone the repo
@@ -8,7 +8,7 @@ git clone https://github.com/BreanneP/patternDesigns.git
 
 2. Change into this current directory
 ```
-cd patternDesigns/factories/composite_factory
+cd patternDesigns/composite
 ```
 
 3. Compile the program using Make
@@ -51,4 +51,4 @@ RESULT: Branch(Branch(Leaf+Leaf)+Branch(Leaf)+Leaf)
 
 ## UML Design
 
-![Alt text](CompositeFactory.png?raw=true "Title") 
+![Alt text](CompositePattern.png?raw=true "Title") 

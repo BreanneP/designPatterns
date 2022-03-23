@@ -57,7 +57,7 @@ RESULT: ConcreteDecoratorB(ConcreteDecoratorA(ConcreteComponent))
     * define extra behaviors that can be added to components dynamically
     * override methods of the base decorator and execute their behavior either before or after calling the parent method
 * Client
-    * can wrap components in multiple layers of decorators, as long as it works with all objects vis the component interface
+    * can wrap components in multiple layers of decorators, as long as it works with all objects via the component interface
 
 ## UML Design
 

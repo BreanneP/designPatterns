@@ -37,7 +37,7 @@ Subsystem2: Fire!
     * it knows where to direct the client's request and how to operate all the moving parts
 * Additional Facade
     * can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure
-    * can be used by both clientes and other facades
+    * can be used by both clients and other facades
 * Complex Subsystem
     * consists of dozens of various objects
     * to make them all do something meaningful, you have to dive deep into the subsystem's implementation details, such as initializing objects in the correct order and supplying them with data in the proper format
